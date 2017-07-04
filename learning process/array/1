@@ -1,0 +1,19 @@
+public static void main(String[] args)
+	{
+		int[] arr={-4,45,56,-8,-110,67};
+
+		System.out.println(getmin(arr));
+	}
+
+	public static int getmin(int[] arr)
+	{
+		int min=0;
+		for(int a=1;a<arr.length;a++)
+		{ 	
+			if(arr[a]<arr[min])
+			{
+				min=a;
+			}
+		}	
+		return arr[min];
+	}
